@@ -22,7 +22,7 @@ var (
 
 func main() {
   flag.StringVar(&projectID, "projectID", os.Getenv("GCLOUD_PROJECT"), "GCP Project ID")
-	flag.StringVar(&queryFlag, "query", os.Getenv("T_QUERY"), "Query args")
+	flag.StringVar(&queryFlag, "query", os.Getenv("T_QUERY"), "ilovelearning, byjus") //Tweets to search
 	flag.Parse()
 	if projectID == "" {
 		log.Fatal("ProjectID argument required")
